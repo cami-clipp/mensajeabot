@@ -556,6 +556,21 @@
     .nav-links { display: none; }
   }
 
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    section { padding: 60px 20px; }
+    .flujo-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+    .chat-demo { display: none; }
+    .hero h1 { font-size: 2rem; }
+    .stats { grid-template-columns: repeat(2, 1fr) !important; }
+    .proceso-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .benefits-grid { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns: repeat(3, 1fr)"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))"] { grid-template-columns: 1fr !important; }
+    .cta-section { padding: 60px 24px; }
+    .cta-section h2 { font-size: 1.8rem; }
+  }
+
   .highlight { color: var(--verde); }
 </style>
 </head>
@@ -606,7 +621,7 @@
     <p>Hacé click en cada paso para entenderlo mejor</p>
   </div>
 
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;" class="reveal">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;" class="reveal flujo-grid">
 
     <!-- FLUJO -->
     <div class="flow-container">
