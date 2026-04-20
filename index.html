@@ -560,7 +560,7 @@
   @media (max-width: 768px) {
     section { padding: 60px 20px; }
     .flujo-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
-    .chat-demo { display: none; }
+    .chat-sticky { position: static !important; }
     .hero h1 { font-size: 2rem; }
     .stats { grid-template-columns: repeat(2, 1fr) !important; }
     .proceso-grid { grid-template-columns: repeat(2, 1fr) !important; }
@@ -695,7 +695,7 @@
     </div>
 
     <!-- CHAT DEMO -->
-    <div style="position: sticky; top: 100px;">
+    <div style="position: sticky; top: 100px;" class="chat-sticky">
       <div class="chat-demo">
         <div class="chat-header">
           <div class="chat-avatar">🛍️</div>
@@ -728,6 +728,9 @@
     <button class="tab" onclick="switchTab('comida')">🍕 Gastronomía</button>
     <button class="tab" onclick="switchTab('servicios')">💆 Servicios</button>
     <button class="tab" onclick="switchTab('tienda')">🛒 Tienda</button>
+    <button class="tab" onclick="switchTab('juridico')">⚖️ Estudio Jurídico</button>
+    <button class="tab" onclick="switchTab('turismo')">✈️ Turismo</button>
+    <button class="tab" onclick="switchTab('emprendimiento')">🚀 Emprendimiento</button>
   </div>
 
   <div class="tab-content active reveal" id="tab-ropa">
@@ -809,6 +812,66 @@
       </div>
     </div>
   </div>
+
+  <div class="tab-content reveal" id="tab-juridico">
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">📋</div>
+        <h3>Primera consulta automatizada</h3>
+        <p>El bot recibe el caso del cliente, recopila la información básica y la pasa al profesional listo para atender.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">📅</div>
+        <h3>Coordinación de reuniones</h3>
+        <p>Agenda consultas, envía confirmaciones y recuerda los turnos sin intermediarios.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🔒</div>
+        <h3>Respuestas cautelosas</h3>
+        <p>El bot está entrenado para no dar asesoramiento legal — solo informa y deriva. Sin comprometer al estudio.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content reveal" id="tab-turismo">
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🗺️</div>
+        <h3>Cotizaciones al instante</h3>
+        <p>El cliente pregunta por un destino y recibe opciones, precios estimados e itinerarios en segundos.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🏨</div>
+        <h3>Info de paquetes</h3>
+        <p>Detalla qué incluye cada paquete, vuelos, alojamiento, traslados y fechas disponibles.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">✈️</div>
+        <h3>Seguimiento del viajero</h3>
+        <p>Responde dudas antes, durante y después del viaje. El cliente se siente acompañado en todo momento.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content reveal" id="tab-emprendimiento">
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">⚡</div>
+        <h3>Respondés como una empresa grande</h3>
+        <p>El bot da una imagen profesional y ágil desde el primer mensaje, aunque seas vos solo manejando todo.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🕐</div>
+        <h3>Tiempo libre para crecer</h3>
+        <p>Dejás de responder las mismas preguntas todo el día y podés enfocarte en lo que realmente hace crecer tu negocio.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💸</div>
+        <h3>Sin costo de personal</h3>
+        <p>Atención 24/7 por una fracción del costo de contratar a alguien. Escala con vos sin escalar los gastos.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- BENEFICIOS PRINCIPALES -->
@@ -820,9 +883,9 @@
     </div>
     <div class="benefits-grid">
       <div class="benefit-card reveal">
-        <div class="benefit-icon">😴</div>
-        <h3>Trabajás mientras dormís</h3>
-        <p>Las 2am alguien pregunta el precio de unas zapatillas — el bot responde, el cliente queda feliz, y vos seguís durmiendo.</p>
+        <div class="benefit-icon">🙋</div>
+        <h3>Como tener alguien atendiendo por vos</h3>
+        <p>Disponible a cualquier hora, sin pausas ni demoras. Tu equipo humano puede enfocarse en lo que realmente necesita su atención.</p>
       </div>
       <div class="benefit-card reveal">
         <div class="benefit-icon">🎯</div>
