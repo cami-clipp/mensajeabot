@@ -174,7 +174,8 @@ nav {
   color: rgba(59,158,255,0.6);
   text-transform: uppercase;
   line-height: 2;
-  z-index: 2;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-meta-r {
@@ -191,7 +192,7 @@ nav {
   z-index: 2;
 }
 
-.hero-content { position: relative; z-index: 2; }
+.hero-content { position: relative; z-index: 3; }
 
 .hero-eyebrow {
   font-family: 'Space Mono', monospace;
@@ -225,9 +226,9 @@ nav {
 }
 
 .hero h1 .line-dim {
-  color: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.6);
   display: block;
-  text-shadow: 0 0 40px rgba(255,255,255,0.05);
+  text-shadow: 0 0 40px rgba(255,255,255,0.08);
 }
 
 .hero h1 .line-gold {
